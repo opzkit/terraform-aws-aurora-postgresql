@@ -35,6 +35,7 @@ resource "aws_rds_cluster" "default" {
   aws_security_group.allow_postgres.id]
   skip_final_snapshot       = var.skip_final_snapshot
   final_snapshot_identifier = "${var.identifier}-final"
+  storage_encrypted         = true
 }
 
 resource "aws_rds_cluster_instance" "writer" {
