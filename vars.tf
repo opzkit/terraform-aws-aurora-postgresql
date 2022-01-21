@@ -45,3 +45,21 @@ variable "skip_final_snapshot" {
   default     = false
   description = "Store final snapshot or not when destroying database"
 }
+
+variable "cluster_parameters" {
+  type        = map(string)
+  default     = {}
+  description = "cluster parameter group overrides"
+}
+
+variable "kms_key_arn" {
+  type        = string
+  default     = ""
+  description = "KMS key to use for encryption"
+}
+
+variable "enhanced_monitoring" {
+  type        = bool
+  default     = false
+  description = "Enable enhanced monitor on the instance"
+}
