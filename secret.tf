@@ -12,7 +12,7 @@ locals {
     DB_USERNAME  = var.master_username
     DB_PASSWORD  = local.password
     DB_NAME      = aws_rds_cluster.default.cluster_identifier
-    DB_PORT      = aws_rds_cluster.default.port
+    DB_PORT      = tostring(aws_rds_cluster.default.port)
     DB_HOST      = aws_rds_cluster.default.endpoint
     POSTGRES_URL = "postgres://${var.master_username}:${local.password}@${aws_rds_cluster.default.endpoint}:${aws_rds_cluster.default.port}/${aws_rds_cluster.default.cluster_identifier}?sslmode=disable"
   }
