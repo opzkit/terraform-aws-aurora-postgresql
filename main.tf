@@ -40,15 +40,17 @@ resource "aws_rds_cluster" "default" {
   db_subnet_group_name    = aws_db_subnet_group.default.name
   vpc_security_group_ids = [
   aws_security_group.allow_postgres.id]
-  skip_final_snapshot       = var.skip_final_snapshot
-  final_snapshot_identifier = "${var.identifier}-final"
-  storage_encrypted         = true
+  skip_final_snapshot             = var.skip_final_snapshot
+  final_snapshot_identifier       = "${var.identifier}-final"
+  storage_encrypted               = true
 }
 
 resource "aws_rds_cluster_instance" "writer" {
-  cluster_identifier = aws_rds_cluster.default.cluster_identifier
-  identifier         = "${var.identifier}-writer"
-  instance_class     = var.writer_instance_type
-  engine             = aws_rds_cluster.default.engine
-  engine_version     = aws_rds_cluster.default.engine_version
+  cluster_identifier  = aws_rds_cluster.default.cluster_identifier
+  identifier          = "${var.identifier}-writer"
+  instance_class      = var.writer_instance_type
+  engine              = aws_rds_cluster.default.engine
+  engine_version      = aws_rds_cluster.default.engine_version
+  monitoring_interval = var.enhanced_monitoring ? 60 : 0
+  monitoring_role_arn = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
 }

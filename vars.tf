@@ -45,3 +45,9 @@ variable "skip_final_snapshot" {
   default     = false
   description = "Store final snapshot or not when destroying database"
 }
+
+variable "enhanced_monitoring" {
+  type        = bool
+  default     = false
+  description = "Enable enhanced monitor on the instance"
+}
