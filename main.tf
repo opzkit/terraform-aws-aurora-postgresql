@@ -43,6 +43,7 @@ resource "aws_rds_cluster" "default" {
   skip_final_snapshot             = var.skip_final_snapshot
   final_snapshot_identifier       = "${var.identifier}-final"
   storage_encrypted               = true
+  db_cluster_parameter_group_name = aws_rds_cluster_parameter_group.cluster_parameters.name
 }
 
 resource "aws_rds_cluster_instance" "writer" {
@@ -53,4 +54,18 @@ resource "aws_rds_cluster_instance" "writer" {
   engine_version      = aws_rds_cluster.default.engine_version
   monitoring_interval = var.enhanced_monitoring ? 60 : 0
   monitoring_role_arn = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
+}
+
+resource "aws_rds_cluster_parameter_group" "cluster_parameters" {
+  family = "aurora-postgresql13"
+  name   = "${var.identifier}-cluster-parameters"
+
+  dynamic "parameter" {
+    for_each = var.cluster_parameters
+    content {
+      name         = parameter.key
+      value        = parameter.value
+      apply_method = "pending-reboot"
+    }
+  }
 }
