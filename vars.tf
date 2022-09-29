@@ -54,8 +54,8 @@ variable "cluster_parameters" {
 
 variable "kms_key_arn" {
   type        = string
-  default     = ""
-  description = "KMS key to use for encryption"
+  default     = null
+  description = "KMS key to use for encryption, pass null to use AWS default KMS encryption"
 }
 
 variable "enhanced_monitoring" {
