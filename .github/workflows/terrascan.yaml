@@ -1,4 +1,5 @@
-on: [ push ]
+name: Terrascan
+on: [ pull_request ]
 # https://github.com/marketplace/actions/terrascan-iac-scanner
 jobs:
   terrascan_job:
