@@ -2,9 +2,9 @@ name: Terrascan
 on: [ pull_request ]
 # https://github.com/marketplace/actions/terrascan-iac-scanner
 jobs:
-  terrascan_job:
+  terrascan:
     runs-on: ubuntu-latest
-    name: terrascan-action
+    name: terrascan
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
