@@ -63,3 +63,9 @@ variable "enhanced_monitoring" {
   default     = false
   description = "Enable enhanced monitor on the instance"
 }
+
+variable "performance_insights_retention_period" {
+  type        = number
+  default     = 7
+  description = "Performance insights retention period in days, 7 days is free of charge. Read more here: https://aws.amazon.com/rds/performance-insights/pricing"
+}

@@ -48,13 +48,16 @@ resource "aws_rds_cluster" "default" {
 }
 
 resource "aws_rds_cluster_instance" "writer" {
-  cluster_identifier  = aws_rds_cluster.default.cluster_identifier
-  identifier          = "${var.identifier}-writer"
-  instance_class      = var.writer_instance_type
-  engine              = aws_rds_cluster.default.engine
-  engine_version      = aws_rds_cluster.default.engine_version
-  monitoring_interval = var.enhanced_monitoring ? 60 : 0
-  monitoring_role_arn = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
+  cluster_identifier                    = aws_rds_cluster.default.cluster_identifier
+  identifier                            = "${var.identifier}-writer"
+  instance_class                        = var.writer_instance_type
+  engine                                = aws_rds_cluster.default.engine
+  engine_version                        = aws_rds_cluster.default.engine_version
+  monitoring_interval                   = var.enhanced_monitoring ? 60 : 0
+  monitoring_role_arn                   = var.enhanced_monitoring ? aws_iam_role.rds_enhanced_monitoring[0].arn : null
+  performance_insights_kms_key_id       = var.kms_key_arn == "" ? null : var.kms_key_arn
+  performance_insights_enabled          = true
+  performance_insights_retention_period = var.performance_insights_retention_period
 }
 
 resource "aws_rds_cluster_parameter_group" "cluster_parameters" {
