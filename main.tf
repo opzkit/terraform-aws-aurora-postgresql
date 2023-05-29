@@ -1,3 +1,6 @@
+locals {
+  major_version = regex("(0|(?:[1-9]\\d*))(?:\\.(0|(?:[1-9]\\d*))(?:\\.(0|(?:[1-9]\\d*)))?(?:\\-([\\w][\\w\\.\\-_]*))?)?", var.postgresql_version)[0]
+}
 resource "aws_db_subnet_group" "default" {
   name       = "${var.identifier}-db-subnet-group"
   subnet_ids = var.subnet_ids
@@ -61,7 +64,7 @@ resource "aws_rds_cluster_instance" "writer" {
 }
 
 resource "aws_rds_cluster_parameter_group" "cluster_parameters" {
-  family = "aurora-postgresql13"
+  family = "aurora-postgresql${local.major_version}"
   name   = "${var.identifier}-cluster-parameters"
 
   dynamic "parameter" {
