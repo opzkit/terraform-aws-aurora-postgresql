@@ -69,3 +69,15 @@ variable "performance_insights_retention_period" {
   default     = 7
   description = "Performance insights retention period in days, 7 days is free of charge. Read more here: https://aws.amazon.com/rds/performance-insights/pricing"
 }
+
+variable "apply_immediately" {
+  type        = bool
+  default     = false
+  description = "Apply changes immediately instead of next service window"
+}
+
+variable "allow_major_version_upgrade" {
+  type        = bool
+  default     = false
+  description = "Allow upgrades of major as well as minor version"
+}

@@ -42,12 +42,15 @@ resource "aws_rds_cluster" "default" {
   preferred_backup_window = "03:00-05:00"
   db_subnet_group_name    = aws_db_subnet_group.default.name
   vpc_security_group_ids = [
-  aws_security_group.allow_postgres.id]
+    aws_security_group.allow_postgres.id
+  ]
   skip_final_snapshot             = var.skip_final_snapshot
   final_snapshot_identifier       = "${var.identifier}-final"
   storage_encrypted               = true
   db_cluster_parameter_group_name = aws_rds_cluster_parameter_group.cluster_parameters.name
   kms_key_id                      = var.kms_key_arn
+  allow_major_version_upgrade     = var.allow_major_version_upgrade
+  apply_immediately               = var.apply_immediately
 }
 
 resource "aws_rds_cluster_instance" "writer" {
