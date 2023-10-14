@@ -64,6 +64,7 @@ resource "aws_rds_cluster_instance" "writer" {
   performance_insights_kms_key_id       = var.kms_key_arn == "" ? null : var.kms_key_arn
   performance_insights_enabled          = true
   performance_insights_retention_period = var.performance_insights_retention_period
+  ca_cert_identifier                    = var.ca_cert_identifier
 }
 
 resource "aws_rds_cluster_parameter_group" "cluster_parameters" {

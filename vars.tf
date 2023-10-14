@@ -81,3 +81,9 @@ variable "allow_major_version_upgrade" {
   default     = false
   description = "Allow upgrades of major as well as minor version"
 }
+
+variable "ca_cert_identifier" {
+  type        = string
+  default     = null
+  description = "The CA cert identifier to use"
+}
