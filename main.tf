@@ -69,7 +69,7 @@ resource "aws_rds_cluster_instance" "writer" {
 
 resource "aws_rds_cluster_parameter_group" "cluster_parameters" {
   family = "aurora-postgresql${local.major_version}"
-  name   = "${var.identifier}-cluster-parameters"
+  name   = "${var.identifier}-cluster-parameters-${local.major_version}"
 
   dynamic "parameter" {
     for_each = var.cluster_parameters
