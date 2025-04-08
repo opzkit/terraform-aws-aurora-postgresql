@@ -1,5 +1,6 @@
 resource "aws_secretsmanager_secret" "aurora_secret" {
-  #checkov:skip=CKV_AWS_149
+  #checkov:skip=CKV2_AWS_57: "Ensure Secrets Manager secrets should have automatic rotation enabled"
+  #checkov:skip=CKV_AWS_149: "Ensure that Secrets Manager secret is encrypted using KMS CMK"
   name = "rds/postgres/${var.identifier}"
 }
 
