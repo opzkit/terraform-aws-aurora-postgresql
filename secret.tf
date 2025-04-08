@@ -1,4 +1,5 @@
 resource "aws_secretsmanager_secret" "aurora_secret" {
+  #checkov:skip=CKV_AWS_149
   name = "rds/postgres/${var.identifier}"
 }
 

@@ -76,6 +76,19 @@ variable "apply_immediately" {
   description = "Apply changes immediately instead of next service window"
 }
 
+variable "deletion_protection" {
+  type        = bool
+  default     = false
+  description = "Enable delete protection"
+}
+
+variable "enabled_cloudwatch_logs_exports" {
+  type        = bool
+  default     = false
+  description = "Enable log exports to cloudwatch"
+}
+
+
 variable "allow_major_version_upgrade" {
   type        = bool
   default     = false
