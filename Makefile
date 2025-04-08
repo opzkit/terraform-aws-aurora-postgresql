@@ -12,4 +12,3 @@ example/%:
 	@terraform -chdir=$* init
 	@terraform -chdir=$* validate
 	@terraform -chdir=$* plan
-

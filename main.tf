@@ -33,10 +33,12 @@ resource "aws_security_group" "allow_postgres" {
 }
 
 resource "aws_rds_cluster" "default" {
+  #checkov:skip=CKV2_AWS_8: "Ensure that RDS clusters has backup plan of AWS Backup"
   #checkov:skip=CKV_AWS_139: Deletion protection enabled by variable
   deletion_protection = var.deletion_protection
   #checkov:skip=CKV_AWS_162: IAM authentication disabled
   iam_database_authentication_enabled = false
+  #checkov:skip=CKV2_AWS_27: "Ensure Postgres RDS as aws_rds_cluster has Query Logging enabled"
   #checkov:skip=CKV_AWS_324: Log capture enabled by variable
   enabled_cloudwatch_logs_exports = var.enabled_cloudwatch_logs_exports ? ["postgresql", "upgrade"] : []
   cluster_identifier              = var.identifier
