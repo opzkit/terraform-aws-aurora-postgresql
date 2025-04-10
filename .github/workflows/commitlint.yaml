@@ -1,15 +1,10 @@
 name: Lint Commit Messages
+permissions: read-all
 
 on: [pull_request]
-permissions:
-  contents: read
 
 jobs:
   commitlint:
-    permissions:
-      contents: read  # for actions/checkout to fetch code
-      pull-requests: read  # for wagoid/commitlint-github-action to get commits in PR
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4

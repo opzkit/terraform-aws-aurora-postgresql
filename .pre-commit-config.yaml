@@ -4,12 +4,21 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
         args:
           - --allow-multiple-documents
-      - id: check-added-large-files
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+        args:
+          - --allow-multiple-documents
+      - id: no-commit-to-branch
+      - id:
+          check-added-large-files
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v9.22.0
     hooks:
