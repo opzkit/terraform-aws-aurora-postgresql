@@ -93,4 +93,8 @@ resource "aws_rds_cluster_parameter_group" "cluster_parameters" {
       apply_method = "pending-reboot"
     }
   }
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
