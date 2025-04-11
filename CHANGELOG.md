@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.1.0...v0.2.0) (2025-04-11)
+
+
+### Features
+
+* update RDS cluster parameter group lifecycle ([#42](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/42)) ([65c32b8](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/65c32b8c1a4bb4e3c1a0e2da903b22b2fbee2b87))
+
 ## [0.1.0](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.0.10...v0.1.0) (2025-04-10)
 
 
