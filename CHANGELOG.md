@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.2.0...v0.2.1) (2025-04-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.0 ([#44](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/44)) ([4afda39](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/4afda39e0693a98c1b50c78fa9ca8ad598a21489))
+
 ## [0.2.0](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.1.0...v0.2.0) (2025-04-11)
 
 
