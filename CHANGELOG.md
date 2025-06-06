@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.1](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.2.0...v0.2.1) (2025-06-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/setup-python action to v5.6.0 ([#46](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/46)) ([be596c6](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/be596c6e6a24ad38e4b03e6147053ac7e4061c50))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.0 ([#44](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/44)) ([4afda39](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/4afda39e0693a98c1b50c78fa9ca8ad598a21489))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.1 ([#49](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/49)) ([b8602ec](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/b8602ec4ac0a4c610b9245b0df3ac7dce0eb7238))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.3 ([#50](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/50)) ([495ef80](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/495ef80ec16c693cd5205af0deabdfb61477026d))
+* remove unnecessary work flow for release please ([#47](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/47)) ([c04575c](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/c04575c7ea2a90160264187ad41ae6ca0c2a3d28))
+
 ## [0.2.0](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.1.0...v0.2.0) (2025-04-11)
 
 
