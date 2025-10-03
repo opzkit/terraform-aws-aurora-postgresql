@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.2](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.2.1...v0.2.2) (2025-08-12)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v4.3.0 ([#58](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/58)) ([a9f717e](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/a9f717e0773acd84d8ee205ff8028c8bdba65277))
+* **deps:** update actions/checkout action to v5 ([#59](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/59)) ([ad68a64](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/ad68a646dd18d0180afd31a94e6fe59ac94d964a))
+* **deps:** update actions/checkout digest to 08eba0b ([#57](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/57)) ([f72c73c](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/f72c73c458d0a631fa0858919ea1b8b727efda81))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.100.0 ([#55](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/55)) ([df9e622](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/df9e6225d6de8e918c16e15ee70f0b2e2b8c2a5b))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.99.5 ([#53](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/53)) ([0330dc4](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/0330dc422ea2f8144148f8d4cd9326cdc00e9def))
+* **deps:** update pre-commit hook pre-commit/pre-commit-hooks to v6 ([#56](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/56)) ([b07c4f9](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/b07c4f939ce8ace0f29289b0997065ecc80c2a19))
+* **deps:** update terraform-linters/setup-tflint action to v5 ([#60](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/60)) ([2d9f695](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/2d9f6950e53ffab7a3a5c887e1659a6877cf0f93))
+
 ## [0.2.1](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.2.0...v0.2.1) (2025-06-19)
 
 
