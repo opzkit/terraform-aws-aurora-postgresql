@@ -100,3 +100,13 @@ variable "ca_cert_identifier" {
   default     = null
   description = "The CA cert identifier to use"
 }
+
+variable "ssl_mode" {
+  type    = string
+  default = "disable"
+  validation {
+    condition     = contains(["disable", "allow", "prefer", "require", "verify-ca", "verify-full"], var.ssl_mode)
+    error_message = "Must be either \"disable\", \"allow\", \"prefer\", \"require\", \"verify-ca\" or \"verify-full\"."
+  }
+  description = "SSL Mode for database connection, https://www.postgresql.org/docs/current/libpq-ssl.html"
+}
