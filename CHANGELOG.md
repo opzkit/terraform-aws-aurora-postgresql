@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.3.1](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.3.0...v0.3.1) (2026-01-06)
+
+
+### Miscellaneous Chores
+
+* **deps:** update actions/checkout action to v5.0.1 ([#106](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/106)) ([8c1b32b](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/8c1b32b351b2af262f7a3cd5051b9fda67f5ffd9))
+* **deps:** update actions/checkout action to v6 ([#109](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/109)) ([69c0aff](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/69c0aff36d4019d8918c36214d7705abdb6fb0ac))
+* **deps:** update actions/checkout action to v6.0.1 ([#115](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/115)) ([faca557](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/faca557ce478e7c1b4a9e3e93c19cfdbfe512b63))
+* **deps:** update actions/checkout digest to 8e8c483 ([#114](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/114)) ([ad28ef8](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/ad28ef8feb9128ac61f48d3cf59e84dfc0a56b8e))
+* **deps:** update actions/checkout digest to 93cb6ef ([#105](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/105)) ([7173139](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/71731399acec25d87c0515c712aa3d68a3f58d84))
+* **deps:** update actions/create-github-app-token digest to 29824e6 ([#116](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/116)) ([3efc6f6](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/3efc6f6cd15289b586ba5155c5dabdc0a0c6fb5b))
+* **deps:** update actions/create-github-app-token digest to 7e473ef ([#110](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/110)) ([d9ccd53](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/d9ccd533be1f3defd2c540f3c05748f096356799))
+* **deps:** update actions/setup-python action to v6.1.0 ([#112](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/112)) ([0ee4a25](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/0ee4a2526f5917fe256225b179f7eaa9c0b0713e))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.104.0 ([#108](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/108)) ([0d8ce20](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/0d8ce20e70ca10ae0bc51a26e8c1c7962a0d2fc3))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.104.1 ([#121](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/121)) ([3f8b2c0](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/3f8b2c06c5da26ff170f04a5484d6cdb1893f1df))
+* **deps:** update pre-commit hook antonbabenko/pre-commit-terraform to v1.105.0 ([#123](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/123)) ([22582b2](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/22582b28a45b2d0fe195ed23acb4e70432250d5c))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.19.3 ([#111](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/111)) ([d95873b](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/d95873b0bc50d5bd1e2513edf306f885d73afed5))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.27.0 ([#113](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/113)) ([2b35874](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/2b35874c9011fdb4015a3f22ddb4f2f34f3c008c))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.39.2 ([#117](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/117)) ([108fa55](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/108fa558446e6d503b287efc6acc57a3e4a37390))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.52.8 ([#118](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/118)) ([54a6b35](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/54a6b358c6f9a760c3f62f8b1befa06cca511ba0))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.64.1 ([#119](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/119)) ([54a8723](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/54a872364e0f59cc6c551b07d9e5c86aed6159d1))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.66.11 ([#120](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/120)) ([7ad1b6d](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/7ad1b6d051e97ff89a7874529e67ebacbfe0d7db))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v42.71.0 ([#122](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/122)) ([86959ea](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/86959ea8c002bd5d755f2b15ed593a8a1f25f268))
+
 ## [0.3.0](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.2.1...v0.3.0) (2025-11-17)
 
 
