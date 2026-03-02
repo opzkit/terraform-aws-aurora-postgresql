@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.3.2](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.3.1...v0.3.2) (2026-03-02)
+
+
+### Miscellaneous Chores
+
+* **deps:** update hashicorp/setup-terraform action to v4 ([#136](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/136)) ([bf6fca6](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/bf6fca61c9666b02baf957b690990594b26c63d9))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.31.1 ([#134](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/134)) ([16ddde4](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/16ddde48bbabd03987d0cd89327df33208bf7aab))
+* **deps:** update pre-commit hook renovatebot/pre-commit-hooks to v43.46.6 ([#137](https://github.com/opzkit/terraform-aws-aurora-postgresql/issues/137)) ([5eebc84](https://github.com/opzkit/terraform-aws-aurora-postgresql/commit/5eebc846ccf03abe80e944f8d2b3faacd8103c3d))
+
 ## [0.3.1](https://github.com/opzkit/terraform-aws-aurora-postgresql/compare/v0.3.0...v0.3.1) (2026-02-17)
 
 
