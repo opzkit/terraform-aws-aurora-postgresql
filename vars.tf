@@ -101,6 +101,18 @@ variable "ca_cert_identifier" {
   description = "The CA cert identifier to use"
 }
 
+variable "backup_retention_period" {
+  type        = number
+  default     = 14
+  description = "Number of days to retain backups"
+}
+
+variable "storage_type" {
+  type        = string
+  default     = null
+  description = "Aurora storage type. Set to 'aurora-iopt1' for I/O-Optimized."
+}
+
 variable "ssl_mode" {
   type    = string
   default = "disable"
